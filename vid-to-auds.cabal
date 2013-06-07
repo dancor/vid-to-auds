@@ -2,14 +2,17 @@ name:            vid-to-auds
 version:         0.1
 license:         BSD3
 license-file:    LICENSE
-author:          dan corson <danl@alum.mit.edu>
-synopsis:        <syn>
+author:          Daniel P Corson <danl@alum.mit.edu>
+synopsis:        Separate the audio track of a video file into audio files.
 build-type:      Simple
-build-depends:   base
+build-depends:
+    base
+  , directory
+  , either-unwrap
+  , filepath
+  , HSH
+  , MissingH
 
 executable:      vid-to-auds
-main-is:         Main.hs
-hs-source-dirs:  src
-
-exposed-modules: vid-to-auds
+main-is:         VidToAuds.hs
 hs-source-dirs:  src
